@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Oxi Fresh Carpet Cleaning of Charleston, SC</title>
+<meta name="description" content="Oxi Fresh Carpet Cleaning of Charleston, SC – eco-friendly carpet, upholstery, tile & grout cleaning with a one-hour dry time. Call (843) 484-5097.">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --dark:#121b35; --dark-2:#1a2749; --dark-3:#243462;
+    --blue:#458fd4; --blue-d:#2f76ba; --blue-soft:#d8e9f8;
+    --green:#7cc242; --green-d:#62a52d;
+    --ink:#1b2438; --muted:#5b6780; --line:#e2e8f0; --soft:#f2f6fb; --white:#fff;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;font-family:"Open Sans",Arial,sans-serif;color:var(--ink);background:var(--white);line-height:1.6}
+  h1,h2,h3,h4{font-family:Montserrat,Arial,sans-serif;line-height:1.1;margin:0 0 .5em;letter-spacing:-.01em}
+  a{color:var(--blue-d)}
+  img{max-width:100%}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+  .eyebrow{display:inline-block;font-family:Montserrat;font-weight:700;font-size:12.5px;letter-spacing:.16em;
+           text-transform:uppercase;color:var(--green);margin-bottom:14px}
+  .eyebrow::before{content:"";display:inline-block;width:28px;height:3px;background:var(--green);vertical-align:middle;margin-right:10px}
+
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--blue);color:#fff;
+       font-family:Montserrat;font-weight:800;text-decoration:none;padding:15px 26px;border-radius:999px;border:0;cursor:pointer;
+       font-size:15px;letter-spacing:.02em;transition:background .15s, transform .15s}
+  .btn:hover{background:var(--blue-d);transform:translateY(-1px)}
+  .btn.green{background:var(--green)} .btn.green:hover{background:var(--green-d)}
+  .btn.ghost{background:transparent;border:2px solid rgba(255,255,255,.55)}
+  .btn.ghost:hover{background:rgba(255,255,255,.1);border-color:#fff}
+
+  /* Header */
+  header.site{background:var(--dark);position:sticky;top:0;z-index:10;border-bottom:3px solid var(--blue)}
+  header.site .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-top:12px;padding-bottom:12px}
+  .brand{display:flex;align-items:center;gap:14px;text-decoration:none}
+  .brand .logo{background:#fff;border-radius:8px;padding:6px 12px;display:flex;align-items:center;min-height:52px}
+  .brand img{height:40px;width:auto;display:block}
+  .brand .wordmark{display:none;font-family:Montserrat;font-weight:900;font-size:20px;color:var(--blue)}
+  .brand .wordmark b{color:var(--green)}
+  .brand .loc{font-family:Montserrat;font-weight:800;font-size:14px;color:#fff;letter-spacing:.06em;text-transform:uppercase}
+  .head-right{display:flex;align-items:center;gap:18px}
+  .head-phone{color:#fff;text-decoration:none;font-family:Montserrat;font-weight:700}
+  .head-phone small{display:block;font-weight:500;font-size:11px;color:var(--blue-soft);letter-spacing:.08em;text-transform:uppercase}
+  header .btn{padding:11px 20px;font-size:14px}
+
+  /* Hero */
+  .hero{position:relative;background:var(--dark);color:#fff;overflow:hidden}
+  .hero::after{content:"";position:absolute;inset:0 0 0 52%;
+     background:linear-gradient(90deg,var(--dark) 0%,rgba(18,27,53,.55) 35%,rgba(18,27,53,.3) 100%),
+                url("https://www.oxifresh.com/wp-content/themes/oxifresh_alt/images/homeBanner-1w.jpg") center/cover, var(--dark-3)}
+  .hero .wrap{position:relative;z-index:1;display:grid;grid-template-columns:1.05fr .95fr;gap:56px;
+              padding-top:80px;padding-bottom:88px;align-items:center}
+  .hero h1{font-size:54px;font-weight:900}
+  .hero h1 em{font-style:normal;color:var(--blue)}
+  .hero p.lead{font-size:18px;color:#d3dcee;max-width:520px}
+  .hero .ctas{display:flex;gap:12px;flex-wrap:wrap;margin:28px 0 36px}
+  .facts{list-style:none;padding:0;margin:0;display:grid;gap:14px;max-width:520px}
+  .facts li{display:flex;gap:14px;align-items:flex-start;font-size:14.5px;color:#d3dcee}
+  .facts .ic{flex:none;width:34px;height:34px;border-radius:50%;background:rgba(69,143,212,.18);color:var(--blue);
+             display:flex;align-items:center;justify-content:center;font-weight:800;font-size:15px}
+  .facts b{display:block;color:#fff;font-family:Montserrat;font-size:13px;letter-spacing:.06em;text-transform:uppercase}
+
+  /* Form */
+  .card{background:#fff;color:var(--ink);border-radius:16px;padding:30px;box-shadow:0 24px 60px rgba(0,0,0,.35);border-top:6px solid var(--blue)}
+  .card h2{font-size:24px;color:var(--dark);font-weight:800}
+  .card .sub{color:var(--muted);font-size:14px;margin:-6px 0 18px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  label{display:block;font-size:12px;font-weight:700;margin-bottom:5px;color:var(--dark);font-family:Montserrat;letter-spacing:.04em;text-transform:uppercase}
+  input,textarea,select{width:100%;padding:11px 13px;border:1.5px solid #d0d9e5;border-radius:8px;font:inherit;font-size:15px;background:#fbfcfe;color:var(--ink)}
+  input:focus,textarea:focus,select:focus{outline:none;border-color:var(--blue);box-shadow:0 0 0 3px rgba(69,143,212,.2);background:#fff}
+  textarea{min-height:76px;resize:vertical}
+  .field{margin-bottom:12px}
+  .consent{display:flex;gap:10px;align-items:flex-start;background:var(--soft);border-radius:10px;padding:12px 14px;margin:6px 0 16px}
+  .consent input{width:18px;height:18px;margin-top:3px;flex:none;accent-color:var(--blue)}
+  .consent p{margin:0;font-size:12.5px;line-height:1.5}
+  .consent label{display:inline;font-weight:400;color:inherit;font-size:inherit;font-family:inherit;letter-spacing:0;text-transform:none;margin:0}
+  .card .btn{width:100%}
+  .thanks{display:none;background:#eef8e6;border:1px solid #cbe8b3;color:#3b6a17;padding:12px;border-radius:8px;margin-top:12px;font-size:14px}
+
+  /* Strip */
+  .strip{background:var(--blue);color:#fff}
+  .strip .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;padding-top:26px;padding-bottom:26px;text-align:center}
+  .strip strong{display:block;font-family:Montserrat;font-weight:900;font-size:26px;line-height:1.15}
+  .strip span{font-size:13px;font-weight:600;letter-spacing:.03em;opacity:.95}
+
+  section{padding:96px 0}
+  section.dark{background:var(--dark);color:#fff}
+  section.soft{background:var(--soft)}
+  .section-head{max-width:760px;margin:0 0 44px}
+  .section-head.center{text-align:center;margin-left:auto;margin-right:auto}
+  .section-head h2{font-size:40px;font-weight:900;color:var(--dark)}
+  section.dark .section-head h2{color:#fff}
+  .section-head p{color:var(--muted);font-size:17px;margin:0}
+  section.dark .section-head p{color:#b9c5dc}
+
+  /* Services */
+  .services{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+  .svc{position:relative;background:#fff;border:1px solid var(--line);border-radius:14px;padding:24px 20px;overflow:hidden;transition:transform .15s, box-shadow .15s}
+  .svc:hover{transform:translateY(-3px);box-shadow:0 12px 28px rgba(18,27,53,.1)}
+  .svc::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--blue)}
+  .svc h3{font-size:17px;color:var(--dark);font-weight:800;margin:0 0 4px}
+  .svc p{margin:0;font-size:13.5px;color:var(--muted)}
+
+  /* Green process */
+  .process{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+  .bigstat{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+  .stat{background:var(--dark-2);border-radius:16px;padding:28px 24px;border:1px solid rgba(255,255,255,.06)}
+  .stat strong{display:block;font-family:Montserrat;font-weight:900;font-size:42px;line-height:1;color:var(--blue);margin-bottom:8px}
+  .stat.g strong{color:var(--green)}
+  .stat span{color:#c9d3e6;font-size:14px}
+  .checks{list-style:none;padding:0;margin:22px 0 30px;display:grid;gap:12px}
+  .checks li{display:flex;gap:12px;align-items:flex-start;color:#d3dcee}
+  .checks li::before{content:"✓";flex:none;width:24px;height:24px;border-radius:50%;background:var(--green);color:#fff;
+                     display:flex;align-items:center;justify-content:center;font-weight:800;font-size:13px;margin-top:1px}
+
+  /* Owners */
+  .owners{display:grid;grid-template-columns:auto 1fr auto;gap:40px;align-items:center;background:var(--dark-2);border-radius:20px;padding:44px 48px;color:#fff}
+  .owners .mono{width:96px;height:96px;border-radius:50%;background:var(--blue);display:flex;align-items:center;justify-content:center;
+                font-family:Montserrat;font-weight:900;font-size:30px}
+  .owners h2{font-size:30px;font-weight:900;margin:0 0 6px}
+  .owners p{color:#c9d3e6;margin:0}
+
+  /* Areas */
+  .areas{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+  .areas span{background:#fff;border:1px solid var(--line);border-radius:999px;padding:8px 16px;font-size:14px;font-weight:600;color:var(--dark)}
+
+  .sms{max-width:860px;margin:0 auto;background:#fff;border-radius:14px;border-left:6px solid var(--blue);
+       box-shadow:0 6px 24px rgba(18,27,53,.08);padding:28px 32px}
+  .sms h2{font-size:22px;color:var(--dark);font-weight:800}
+  .sms p{margin:0 0 10px}
+
+  footer{background:var(--dark);color:#b3bfd6;font-size:14px}
+  footer .wrap{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:32px;padding-top:64px;padding-bottom:40px}
+  footer h4{color:#fff;margin:0 0 14px;font-size:13px;letter-spacing:.12em;text-transform:uppercase}
+  footer h4.brandline{font-size:17px;letter-spacing:0;text-transform:none}
+  footer ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+  footer a{color:#b3bfd6;text-decoration:none}
+  footer a:hover{color:var(--blue)}
+  .legal{border-top:1px solid rgba(255,255,255,.1);text-align:center;padding:18px 20px;font-size:12.5px}
+
+  @media (max-width:960px){
+    .hero::after{inset:0;opacity:.35}
+    .hero .wrap,.process{grid-template-columns:1fr}
+    .hero h1{font-size:42px}
+    .services{grid-template-columns:repeat(2,1fr)}
+    .strip .wrap{grid-template-columns:1fr 1fr}
+    .owners{grid-template-columns:1fr;text-align:center;padding:36px 28px;justify-items:center}
+    footer .wrap{grid-template-columns:1fr 1fr}
+    .section-head h2{font-size:32px}
+    .head-phone{display:none}
+  }
+  @media (max-width:560px){
+    .wrap{padding:0 16px}
+    section{padding:64px 0}
+    .hero .wrap{padding-top:48px;padding-bottom:56px}
+    .hero h1{font-size:34px}
+    .grid2,.services,footer .wrap,.bigstat{grid-template-columns:1fr}
+    header .btn,.brand .loc{display:none}
+    .card{padding:22px}
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="#top">
+      <span class="logo">
+        <img src="https://www.oxifresh.com/wp-content/uploads/2019/12/oxifresh-logo-retina.png" alt="Oxi Fresh Carpet Cleaning"
+             onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+        <span class="wordmark">Oxi <b>Fresh</b></span>
+      </span>
+      <span class="loc">Charleston, SC</span>
+    </a>
+    <div class="head-right">
+      <a class="head-phone" href="tel:+18434845097"><small>Call us today</small>(843) 484-5097</a>
+      <a class="btn" href="#quote">Get a Free Quote</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <div class="wrap">
+      <div>
+        <span class="eyebrow">Oxi Fresh Carpet Cleaning</span>
+        <h1>Professional <em>Charleston</em> Carpet Cleaning</h1>
+        <p class="lead">Eco-friendly, oxygen-powered cleaning that leaves your carpets fresh and dry in about an hour — not a whole day.</p>
+        <div class="ctas">
+          <a class="btn green" href="#quote">Get a Free Quote</a>
+          <a class="btn ghost" href="tel:+18434845097">Call (843) 484-5097</a>
+        </div>
+        <ul class="facts">
+          <li><span class="ic">⏱</span><div><b>One-hour dry time</b>Get back to your home fast.</div></li>
+          <li><span class="ic">♻</span><div><b>Green &amp; eco-friendly</b>EPA Safer Choice certified products, using about 95% less water than traditional steam cleaners.</div></li>
+          <li><span class="ic">★</span><div><b>Locally owned &amp; operated</b>Christian &amp; Sara Olson</div></li>
+        </ul>
+      </div>
+
+      <form class="card" id="quote" onsubmit="return submitForm(event)">
+        <h2>Request Your Free Quote</h2>
+        <p class="sub">Tell us what you need and we'll get back to you quickly.</p>
+        <div class="grid2">
+          <div class="field"><label for="fn">First Name*</label><input id="fn" name="first_name" required autocomplete="given-name"></div>
+          <div class="field"><label for="ln">Last Name*</label><input id="ln" name="last_name" required autocomplete="family-name"></div>
+        </div>
+        <div class="field"><label for="em">Email*</label><input id="em" name="email" type="email" required autocomplete="email"></div>
+        <div class="grid2">
+          <div class="field"><label for="ph">Phone Number*</label><input id="ph" name="phone" type="tel" required autocomplete="tel"></div>
+          <div class="field"><label for="zip">ZIP Code*</label><input id="zip" name="zip" required autocomplete="postal-code"></div>
+        </div>
+        <div class="field"><label for="svc">Service Needed</label>
+          <select id="svc" name="service">
+            <option>Carpet Cleaning</option><option>Upholstery Cleaning</option><option>Tile and Grout Cleaning</option>
+            <option>Hardwood Floor Cleaning</option><option>Rug Cleaning</option><option>Dryer Vent Cleaning</option>
+            <option>Commercial Carpet Cleaning</option><option>Other</option>
+          </select>
+        </div>
+        <div class="field"><label for="msg">How can we help you?</label><textarea id="msg" name="message"></textarea></div>
+
+        <div class="consent">
+          <input type="checkbox" id="sms_consent" name="sms_consent" value="yes">
+          <p><label for="sms_consent">By opting in, you agree to receive conversational, marketing, promotional, and customer‑care SMS from Oxi Fresh Carpet Cleaning. Reply STOP to opt out; HELP for support. Message &amp; data rates may apply. Messaging frequency may vary.</label>
+          View our <a href="https://www.oxifresh.com/privacy-policy/" target="_blank" rel="noopener">Privacy Policy</a> and <a href="https://www.oxifresh.com/terms-of-use/" target="_blank" rel="noopener">Terms of Use</a>.</p>
+        </div>
+
+        <button class="btn" type="submit">Get My Free Quote</button>
+        <div class="thanks" id="thanks">Thank you! Our Charleston team will reach out shortly.</div>
+      </form>
+    </div>
+  </div>
+
+  <div class="strip">
+    <div class="wrap">
+      <div><strong>~1 Hour</strong><span>Dry time</span></div>
+      <div><strong>95%</strong><span>Less water than steam cleaning</span></div>
+      <div><strong>EPA Safer Choice</strong><span>Certified products</span></div>
+      <div><strong>Free</strong><span>Quotes</span></div>
+    </div>
+  </div>
+
+  <section>
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Our services</span>
+        <h2>Cleaning for every surface in your home or business</h2>
+        <p>From everyday carpet care to tough stains and odors, our Charleston team has you covered.</p>
+      </div>
+      <div class="services">
+        <div class="svc"><h3>Carpet Cleaning</h3><p>Deep, oxygen-powered clean with fast dry time.</p></div>
+        <div class="svc"><h3>Upholstery Cleaning</h3><p>Refresh sofas, chairs and fabric furniture.</p></div>
+        <div class="svc"><h3>Tile and Grout Cleaning</h3><p>Bring back the original shine.</p></div>
+        <div class="svc"><h3>Hardwood Floor Cleaning</h3><p>Safe, gentle care for wood floors.</p></div>
+        <div class="svc"><h3>Rug Cleaning</h3><p>Area rugs cleaned with care.</p></div>
+        <div class="svc"><h3>Stain &amp; Odor Removal</h3><p>Targeted treatment for spots, spills and pet odors.</p></div>
+        <div class="svc"><h3>Dryer Vent Cleaning</h3><p>Improve airflow and reduce fire risk.</p></div>
+        <div class="svc"><h3>Commercial Carpet Cleaning</h3><p>Offices, rentals and commercial spaces.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="dark">
+    <div class="wrap process">
+      <div class="bigstat">
+        <div class="stat"><strong>~1 hr</strong><span>Typical carpet dry time</span></div>
+        <div class="stat g"><strong>95%</strong><span>Water conservation vs. traditional steam cleaners</span></div>
+        <div class="stat g"><strong>Green</strong><span>EPA Safer Choice certified cleaning products</span></div>
+        <div class="stat"><strong>O₂</strong><span>Oxygen-based cleaning technology</span></div>
+      </div>
+      <div>
+        <span class="eyebrow">The Oxi Fresh difference</span>
+        <h2 style="font-size:40px;font-weight:900;color:#fff">A cleaner clean that's better for your home</h2>
+        <ul class="checks">
+          <li>Oxygen-powered cleaning lifts dirt without soaking your carpets.</li>
+          <li>Carpets dry in about an hour, so life gets back to normal fast.</li>
+          <li>Green, eco-friendly products that are safe for kids and pets.</li>
+        </ul>
+        <a class="btn green" href="#quote">Get a Free Quote</a>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="owners">
+        <div class="mono">C&amp;S</div>
+        <div>
+          <h2>Meet Christian and Sara Olson</h2>
+          <p>Your locally owned and operated Oxi Fresh team, proudly serving Charleston and the Lowcountry.</p>
+        </div>
+        <a class="btn" href="tel:+18434845097">Call (843) 484-5097</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="soft">
+    <div class="wrap">
+      <div class="section-head center">
+        <span class="eyebrow">Service areas</span>
+        <h2>Proudly serving Charleston &amp; the Lowcountry</h2>
+      </div>
+      <div class="areas">
+        <span>Charleston</span><span>North Charleston</span><span>Edisto Island</span><span>Folly Beach</span><span>Johns Island</span>
+        <span>Green Pond</span><span>Jacksonboro</span><span>Wadmalaw Island</span><span>Beaufort</span><span>Lady's Island</span>
+        <span>Okatie</span><span>Bluffton</span><span>Daufuskie Island</span><span>Saint Helena Island</span><span>Hilton Head Island</span>
+        <span>Port Royal</span><span>Seabrook</span><span>Sheldon</span><span>Yemassee</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="sms-terms">
+    <div class="wrap">
+      <div class="sms">
+        <h2>SMS Messaging Terms</h2>
+        <p>By opting in, you agree to receive conversational, marketing, promotional, and customer‑care SMS from Oxi Fresh Carpet Cleaning. Reply STOP to opt out; HELP for support. Message &amp; data rates may apply. Messaging frequency may vary.</p>
+        <p>View our <a href="https://www.oxifresh.com/privacy-policy/" target="_blank" rel="noopener">Privacy Policy</a> and <a href="https://www.oxifresh.com/terms-of-use/" target="_blank" rel="noopener">Terms of Use</a>.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <h4 class="brandline">Oxi Fresh Carpet Cleaning of Charleston, SC</h4>
+      <p style="margin:0 0 8px">Locally owned &amp; operated by Christian &amp; Sara Olson</p>
+      <p style="margin:0 0 8px"><a href="tel:+18434845097">(843) 484-5097</a></p>
+    </div>
+    <div>
+      <h4>Services</h4>
+      <ul><li>Carpet Cleaning</li><li>Upholstery Cleaning</li><li>Tile &amp; Grout</li><li>Rug Cleaning</li><li>Dryer Vent Cleaning</li></ul>
+    </div>
+    <div>
+      <h4>Connect</h4>
+      <ul>
+        <li><a href="https://www.facebook.com/OxiFreshCharlestonSC/" target="_blank" rel="noopener">Facebook</a></li>
+        <li><a href="https://www.yelp.com/biz/oxi-fresh-carpet-cleaning-charleston" target="_blank" rel="noopener">Yelp</a></li>
+        <li><a href="https://www.oxifresh.com/locations/sc/charleston-carpet-cleaning/" target="_blank" rel="noopener">Official Location Page</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Legal</h4>
+      <ul>
+        <li><a href="#sms-terms">SMS Terms</a></li>
+        <li><a href="https://www.oxifresh.com/privacy-policy/" target="_blank" rel="noopener">Privacy Policy</a></li>
+        <li><a href="https://www.oxifresh.com/terms-of-use/" target="_blank" rel="noopener">Terms of Use</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="legal">© 2026 Oxi Fresh Carpet Cleaning of Charleston, SC. Each franchise is independently owned and operated.</div>
+</footer>
+
+<script>
+  function submitForm(e){
+    e.preventDefault();
+    // TODO: connect to your form handler / CRM before going live.
+    document.getElementById('thanks').style.display='block';
+    e.target.querySelector('button[type=submit]').disabled = true;
+    return false;
+  }
+</script>
+</body>
+</html>
